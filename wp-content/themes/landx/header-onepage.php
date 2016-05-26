@@ -29,10 +29,19 @@ if( function_exists('ot_get_option') )
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.elevateZoom-3.0.8.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://app.getresponse.com/view_webform_v2.js?u=BNOVC&webforms_id=5676105"></script>
 <![endif]-->
 <?php wp_head(); ?>
 </head>
 <body <?php body_class('landx-onepage'); ?>>
+<div class="tang desktop"></div>
+<div class="right-tuvan desktop"></div>
+<div class="hoantien desktop"></div>
+<div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show desktop" id="coccoc-alo-phoneIcon" style="right: 30px; top:30px;">
+    <div class="coccoc-alo-ph-circle"></div>
+    <div class="coccoc-alo-ph-circle-fill"></div>
+    <div class="coccoc-alo-ph-img-circle"></div>
+</div>
 <!-- =========================
      PRE LOADER       
 ============================== -->

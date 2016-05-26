@@ -89,6 +89,19 @@ body {
     font-family: SegoeUIBlack;
     src: url(../fonts/seguibl.ttf);
 }
+@font-face {
+    font-family: UTMNeoSansIntel;
+    src: url(../fonts/UTM-Neo-Sans-Intel.ttf);
+}
+@font-face {
+    font-family: UTMNeoSansIntelBold;
+    src: url(../fonts/UTM-Neo-Sans-IntelBold.ttf);
+}
+@font-face {
+    font-family: UTMNeoSansIntelItalic;
+    src: url(../fonts/UTM-Neo-Sans-Intel_Italic.ttf);
+}
+
 /*---------------------------------------
    2.2 PRE LOADER              
 -----------------------------------------*/
@@ -1355,7 +1368,7 @@ header.light .vertical-registration-form {
 	color: #5B5B5B;
 	margin-top: 10px;
 }
-#lien-he{ color: #000}
+#lien-he{ color: #000; background-color: #fff}
 #lien-he .wap-thanhtoan {
 	width: 710px;
 	margin: 30px auto 0;
@@ -1383,6 +1396,7 @@ header.light .vertical-registration-form {
 	padding: 15px;
 	color: #000;
 	text-align: center;
+    font-weight: bold;
 }
 #lien-he .box-luuy {
 	width: 80%;
@@ -1470,7 +1484,7 @@ header.light .vertical-registration-form {
 	position: relative;
 	margin-top: 30px;
 	float: left;
-	height: 135px;
+	height: 205px;
 }
 #lien-he .nh-vcb .title {
 	color: #01502d;
@@ -1506,11 +1520,11 @@ header.light .vertical-registration-form {
 	padding-top: 90px;
 	padding-bottom: 10px;
 }
-#tu-van-form{
+#tu-van{
 	background-color: #0F6939;
 	height: 400px;
 }
-#tu-van-form .div23 .bgnen {
+#tu-van.div23 .bgnen {
 	width: 640px;
 	float: left;
 	color: white;
@@ -1546,6 +1560,10 @@ header.light .vertical-registration-form {
 .div23 .bgnen .logo-a {
 	padding-top: 115px;
 }
+.div23 .bgnen .logo-a img{
+    height: 55px;
+    margin-right: 10px;
+}
 .div23 .bgnen .sacsa {
 	padding-top: 20px;
 	text-align: left;
@@ -1571,6 +1589,74 @@ header.light .vertical-registration-form {
 }
 .div23 .text .nhane {
 	font-size: 14px;
+}
+.div23 .img-s {
+    width: 306px;
+    height: 325px;
+    position: absolute;
+    top: 75px;
+    right: 350px;
+}
+.div23 .text .dk {
+    font-size: 50px;
+}
+.div23 form {
+    width: 305px;
+    margin: 10px auto;
+}
+.div23 form input, .div23 form textarea {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    box-sizing: none;
+    clear: both;
+    margin: 2.5px 0;
+    width: 92%;
+    padding: 10px 4%;
+    font-size: 18px;
+    border-radius: 18px;
+}
+.div23 form textarea {
+    height: 82px;
+}
+.div23 form .sub {
+    display: inline-block;
+    width: 146px;
+    height: 43px;
+    text-indent: -9999px;
+    background: url(../images/dangky-footer.png) no-repeat;
+    cursor: pointer;
+}
+.hoantien {
+    display: none;
+    background: url(../images/camket.png) no-repeat;
+    width: 112px;
+    height: 147px;
+    position: fixed;
+    top: 400px;
+    left: 0;
+}
+.da_neo .hoantien, .da_neo .tang, .da_neo .right-tuvan {
+    display: block;
+    cursor: pointer;
+}
+.tang {
+    display: none;
+    background: url(../images/tang.png) no-repeat;
+    width: 112px;
+    height: 170px;
+    position: fixed;
+    top: 225px;
+    left: 0;
+}
+.right-tuvan {
+    display: none;
+    background: url(../images/right-tuvan.png) no-repeat;
+    width: 113px;
+    height: 347px;
+    position: fixed;
+    top: 225px;
+    right: 0;
 }
 	/*---------------------------------------
        4.2.2 NAVIGATION
