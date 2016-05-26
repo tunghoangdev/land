@@ -1,0 +1,98 @@
+/*** Perch Shortcodes - RTL support - front ***/
+
+/*		Tabs + Tab
+---------------------------------------------------------------*/
+
+.perch-tabs-nav span {
+	margin-right: 0;
+	margin-left: 3px;
+}
+.perch-tabs-vertical .perch-tabs-nav {
+	float: right;
+}
+.perch-tabs-vertical .perch-tabs-panes {
+	float: right;
+}
+.perch-tabs-vertical .perch-tabs-nav span {
+	margin-left: 0;
+}
+@media only screen and (max-width: 768px) {
+	.perch-tabs-vertical .perch-tabs-nav,
+	.perch-tabs-vertical .perch-tabs-panes {
+		float: none;
+	}
+}
+
+/*		Spoiler + Accordion
+---------------------------------------------------------------*/
+
+.perch-spoiler-title {
+	padding: 7px 34px 7px 7px;
+}
+.perch-spoiler-icon {
+	right: 7px;
+}
+.perch-spoiler-style-default > .perch-spoiler-title {
+	padding-right: 27px;
+	padding-left: 0;
+}
+.perch-spoiler-style-default > .perch-spoiler-title > .perch-spoiler-icon { right: 0; }
+
+/*		Quote
+---------------------------------------------------------------*/
+
+.perch-quote .perch-quote-cite {
+	text-align: left;
+}
+
+/*		Row + Column
+---------------------------------------------------------------*/
+
+.perch-column {
+	margin: 0 0 0 4%;
+	float: right;
+}
+.perch-column-last { margin-left: 0; }
+.perch-row .perch-column { margin: 0 4% 0 0; }
+.perch-row .perch-column.perch-column-size-1-1 { margin-left: 0; margin-right: 0; }
+.perch-row .perch-column:first-child { margin-right: 0; }
+@media only screen {
+	[class*="perch-column"] + [class*="perch-column"]:last-child { float: left; }
+}
+
+/*		Service
+---------------------------------------------------------------*/
+
+.perch-service-title img,
+.perch-service-title i {
+	left: auto;
+	right: 0;
+}
+
+/*		Label
+---------------------------------------------------------------*/
+
+.perch-label {
+	margin-right: 0;
+	margin-left: 0.3em;
+}
+
+/*		Dropcap
+---------------------------------------------------------------*/
+
+.perch-dropcap {
+	float: right;
+	margin: 0.2em 0 0.2em 0.5em;
+}
+
+/*		List
+---------------------------------------------------------------*/
+
+.perch-list ul li {
+	padding: 4px 2em 4px 0 !important;
+}
+.perch-list ul li > img,
+.perch-list ul li i {
+	left: auto;
+	right: 0;
+}

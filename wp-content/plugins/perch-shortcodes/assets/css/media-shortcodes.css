@@ -1,0 +1,55 @@
+/*** Perch Shortcodes - media elements ***/
+
+/* Container for responsive media elements */
+
+.perch-responsive-media-yes {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+.perch-responsive-media-yes iframe,
+.perch-responsive-media-yes object,
+.perch-responsive-media-yes embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*		YouTube
+---------------------------------------------------------------*/
+
+.perch-youtube { margin: 0 0 1.5em 0 }
+.perch-youtube iframe { border: none !important }
+
+/*		Vimeo
+---------------------------------------------------------------*/
+
+.perch-vimeo { margin: 0 0 1.5em 0 }
+.perch-vimeo iframe { border: none !important }
+
+/*		Screenr
+---------------------------------------------------------------*/
+
+.perch-screenr { margin: 0 0 1.5em 0 }
+.perch-screenr iframe { border: none !important }
+
+/*		Dailymotion
+---------------------------------------------------------------*/
+
+.perch-dailymotion { margin: 0 0 1.5em 0 }
+.perch-dailymotion iframe { border: none !important }
+
+/*		Document
+---------------------------------------------------------------*/
+
+.perch-document { margin: 0 0 1.5em 0 }
+.perch-document iframe { border: none !important }
+
+/*		Gmap
+---------------------------------------------------------------*/
+
+.perch-gmap { margin: 0 0 1.5em 0 }
+.perch-gmap iframe { border: none !important }

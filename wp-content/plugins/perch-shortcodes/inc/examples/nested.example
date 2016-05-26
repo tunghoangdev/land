@@ -1,0 +1,37 @@
+<h2>Basic example</h2>
+
+[%perch_box title="This is a box with nested spoilers"]
+	[%perch_spoiler title="Spoiler title"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="Spoiler title"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="Spoiler title"] Spoiler content [/%perch_spoiler]
+[/%perch_box]
+
+-----
+
+<h2>The same nested shortcodes</h2>
+
+[%perch_spoiler title="Click me to see nested spoilers" style="fancy"]
+	[_%perch_spoiler title="Spoiler title"] Spoiler content [_/%perch_spoiler]
+	[_%perch_spoiler title="Spoiler title"] Spoiler content [_/%perch_spoiler]
+	[_%perch_spoiler title="Spoiler title"] Spoiler content [_/%perch_spoiler]
+[/%perch_spoiler]
+
+-----
+
+<h2>The same nested shortcodes mixed with other shortcodes</h2>
+
+[%perch_spoiler title="Click me to see nested accordion" style="fancy"]
+	[%perch_accordion]
+		[_%perch_spoiler title="Spoiler title"] Spoiler content [_/%perch_spoiler]
+		[_%perch_spoiler title="Spoiler title"] Spoiler content [_/%perch_spoiler]
+		[_%perch_spoiler title="Spoiler title"] Spoiler content [_/%perch_spoiler]
+	[/%perch_accordion]
+[/%perch_spoiler]
+
+-----
+
+<h2>Shortcodes inside of attributes</h2>
+
+To use shortcodes inside of attributes you need to replace square brackets with <code>{</code> and <code>}</code>. Open code to see example
+
+[%perch_button url="{shortcode attribute='value'}"] Button [/%perch_button]

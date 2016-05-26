@@ -1,0 +1,173 @@
+/***********************************
+	Common styles
+***********************************/
+
+.perch-onehalf {
+	float: left;
+	width: 46%;
+	margin: 0 4% 1em 0;
+}
+.perch-onethird {
+	float: left;
+	width: 31%;
+	margin: 0 2% 1em 0;
+}
+.perch-clear {
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+.perch-hidden { display: none }
+
+
+/***********************************
+	Nav tabs
+***********************************/
+
+#perch-tabs {}
+#perch-tabs span { cursor: pointer }
+#perch-tabs .nav-tab-active,
+#perch-tabs span:hover { color: #464646 }
+#perch-tabs .nav-tab-active { cursor: default; }
+h3.perch-no-js-tab {
+	margin: 1em 0;
+	padding: 1em;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	background: #f2f2f2;
+	color: #555;
+}
+
+
+/***********************************
+	Panes
+***********************************/
+
+.perch-pane {
+	margin: 2em 0;
+}
+.js .perch-pane {
+	display: none;
+	border: none;
+}
+
+
+/***********************************
+	Notices
+***********************************/
+
+#perch-settings div.perch-notice { margin: 1.5em 0; }
+
+
+/***********************************
+	Inline menus
+***********************************/
+
+.perch-inline-menu {
+	margin: 1.5em 0;
+	line-height: 1.5em;
+}
+.perch-inline-menu a {
+	display: inline-block;
+	padding: 0 0.7em;
+	border-right: 1px dotted #ccc;
+	text-decoration: none;
+	line-height: 1.5em;
+}
+.perch-inline-menu a:hover {
+	text-decoration: underline;
+}
+.perch-inline-menu a:first-child {
+	padding-left: 0;
+}
+.perch-inline-menu a:last-child {
+	display: inline-block;
+	padding-right: 0;
+	border-right: none;
+}
+
+
+/***********************************
+	Common fields
+***********************************/
+
+#perch-settings .form-table td,
+#perch-settings .form-table th { padding-bottom: 20px }
+
+#perch-settings .description {
+	display: block;
+	margin-top: 5px;
+}
+
+#perch-settings textarea {
+	min-width: 200px;
+}
+
+.perch-checkbox-group label {
+	display: inline-block;
+	margin: 0 0 5px 0;
+}
+
+
+/***********************************
+	Color picker
+***********************************/
+
+.perch-color-picker { position: relative; }
+.perch-color-picker-wheel {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 9999;
+	display: none;
+	border: 1px solid #aaa;
+	background: #fff;
+	-webkit-box-shadow: 0 2px 5px #ccc;
+	-moz-box-shadow: 0 2px 5px #ccc;
+	box-shadow: 0 2px 5px #ccc;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.perch-color-picker .button img {
+	vertical-align: middle;
+	margin: -3px 4px 0 -4px;
+}
+
+
+/***********************************
+	Media manager
+***********************************/
+
+.perch-media {}
+.perch-media .button img {
+	vertical-align: middle;
+	margin: -3px 4px 0 -4px;
+}
+
+
+/***********************************
+	Actions bar
+***********************************/
+
+.perch-actions-bar {
+	margin-top: 20px;
+	padding: 10px;
+	background: #f5f5f5;
+	border-top: 1px solid #eee;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.perch-spin,
+.perch-success-tip {
+	display: none;
+	margin-left: 10px;
+}
+.perch-success-tip { color: #0b0 }
+.perch-spin img,
+.perch-success-tip img { margin: 0 5px -3px 0 }

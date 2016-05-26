@@ -1,0 +1,108 @@
+<h2>Basic accordion</h2>
+
+[%perch_accordion]
+	[%perch_spoiler title="Spoiler title"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="Spoiler title"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="Spoiler title"] Spoiler content [/%perch_spoiler]
+[/%perch_accordion]
+
+-----
+
+<h2>Fancy accordion</h2>
+
+[%perch_accordion]
+	[%perch_spoiler title="Spoiler title" style="fancy"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="Spoiler title" style="fancy"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="Spoiler title" style="fancy"] Spoiler content [/%perch_spoiler]
+[/%perch_accordion]
+
+-----
+
+<h2>Accordion with open spoiler</h2>
+
+[%perch_accordion]
+	[%perch_spoiler title="Spoiler title" open="yes"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="Spoiler title"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="Spoiler title"] Spoiler content [/%perch_spoiler]
+[/%perch_accordion]
+
+-----
+
+<h2>Different spoiler styles</h2>
+
+[%perch_spoiler title="Spoiler title" style="default"] Spoiler content [/%perch_spoiler]
+[%perch_spoiler title="Spoiler title" style="fancy"] Spoiler content [/%perch_spoiler]
+[%perch_spoiler title="Spoiler title" style="simple"] Spoiler content [/%perch_spoiler]
+
+-----
+
+<h2>Open spoilers</h2>
+
+[%perch_spoiler title="Spoiler title" style="default" open="yes"] Spoiler content [/%perch_spoiler]
+[%perch_spoiler title="Spoiler title" style="fancy" open="yes"] Spoiler content [/%perch_spoiler]
+[%perch_spoiler title="Spoiler title" style="simple" open="yes"] Spoiler content [/%perch_spoiler]
+
+-----
+
+<h2>Spoilers with anchors (see the code)</h2>
+
+[%perch_spoiler title="Spoiler title" anchor="Spoiler-1"] Spoiler content [/%perch_spoiler]
+[%perch_spoiler title="Spoiler title" anchor="Spoiler-2"] Spoiler content [/%perch_spoiler]
+[%perch_spoiler title="Spoiler title" anchor="Spoiler-3"] Spoiler content [/%perch_spoiler]
+
+Use next links to open this spoilers
+
+<a href="#Spoiler-1">Open spoiler 1</a> | <a href="#Spoiler-2">Open spoiler 2</a> | <a href="#Spoiler-3">Open spoiler 3</a>
+
+-----
+
+<h2>Accordion + Spoilers + Anchors (see the code)</h2>
+
+[%perch_accordion]
+	[%perch_spoiler title="Spoiler title" anchor="Accordion-1"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="Spoiler title" anchor="Accordion-2"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="Spoiler title" anchor="Accordion-3"] Spoiler content [/%perch_spoiler]
+[/%perch_accordion]
+
+Use next links to expand accordion items
+
+<a href="#Accordion-1">Open spoiler 1</a> | <a href="#Accordion-2">Open spoiler 2</a> | <a href="#Accordion-3">Open spoiler 3</a>
+
+-----
+
+<h2>Different icons</h2>
+
+[%perch_accordion]
+	[%perch_spoiler title="plus" icon="plus"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="plus-circle" icon="plus-circle"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="plus-square-1" icon="plus-square-1"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="plus-square-2" icon="plus-square-2"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="arrow" icon="arrow"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="arrow-circle-1" icon="arrow-circle-1"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="arrow-circle-2" icon="arrow-circle-2"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="caret" icon="caret"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="caret-square" icon="caret-square"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="folder-1" icon="folder-1"] Spoiler content [/%perch_spoiler]
+	[%perch_spoiler title="folder-2" icon="folder-2"] Spoiler content [/%perch_spoiler]
+[/%perch_accordion]
+
+-----
+
+<h2>Custom styles</h2>
+
+[%perch_spoiler title="Spoiler title" class="my-custom-spoiler"] Spoiler content [/%perch_spoiler]
+
+<!--
+	IMPORTANT
+	You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+	.perch-spoiler.my-custom-spoiler {}
+	.perch-spoiler.my-custom-spoiler .perch-spoiler-title { background-color: #84ADEA }
+	.perch-spoiler.my-custom-spoiler .perch-spoiler-title .perch-spoiler-icon,
+	.perch-spoiler.perch-spoiler-closed.my-custom-spoiler .perch-spoiler-title .perch-spoiler-icon {
+		left: 3px;
+		background-color: #fff;
+	}
+	.perch-spoiler.my-custom-spoiler .perch-spoiler-content { background-color: #C0D1EB }
+</style>

@@ -1,0 +1,78 @@
+<h2>Default tabs</h2>
+
+[%perch_tabs]
+	[%perch_tab title="Tab 1"] Tab 1 content [/%perch_tab]
+	[%perch_tab title="Tab 2"] Tab 2 content [/%perch_tab]
+	[%perch_tab title="Tab 3"] Tab 3 content [/%perch_tab]
+[/%perch_tabs]
+
+-----
+
+<h2>Custom active tab</h2>
+
+[%perch_tabs active="2"]
+	[%perch_tab title="Tab 1"] Tab 1 content [/%perch_tab]
+	[%perch_tab title="Tab 2"] Tab 2 content [/%perch_tab]
+	[%perch_tab title="Tab 3"] Tab 3 content [/%perch_tab]
+[/%perch_tabs]
+
+-----
+
+<h2>Vertical tabs</h2>
+
+[%perch_tabs vertical="yes"]
+	[%perch_tab title="Tab 1"] Tab 1 content [/%perch_tab]
+	[%perch_tab title="Tab 2"] Tab 2 content [/%perch_tab]
+	[%perch_tab title="Tab 3"] Tab 3 content [/%perch_tab]
+[/%perch_tabs]
+
+-----
+
+<h2>Disabled tabs</h2>
+
+[%perch_tabs]
+	[%perch_tab title="Tab 1"] Tab 1 content [/%perch_tab]
+	[%perch_tab title="Tab 2"] Tab 2 content [/%perch_tab]
+	[%perch_tab title="Tab 3"] Tab 3 content [/%perch_tab]
+	[%perch_tab title="Tab 4 (disabled)" disabled="yes"] Tab 4 content [/%perch_tab]
+	[%perch_tab title="Tab 5 (disabled)" disabled="yes"] Tab 5 content [/%perch_tab]
+[/%perch_tabs]
+
+-----
+
+<h2>Tabs anchors</h2>
+
+[%perch_tabs]
+	[%perch_tab title="Tab 1" anchor="First"] Tab 1 content [/%perch_tab]
+	[%perch_tab title="Tab 2" anchor="Second"] Tab 2 content [/%perch_tab]
+	[%perch_tab title="Tab 3" anchor="Third"] Tab 3 content [/%perch_tab]
+[/%perch_tabs]
+
+Use next links to switch this tabs
+
+<a href="#First">Open tab 1</a> | <a href="#Second">Open tab 2</a> | <a href="#Third">Open tab 3</a>
+
+-----
+
+<h2>Custom styles</h2>
+
+[%perch_tabs class="my-custom-tabs"]
+	[%perch_tab title="Tab 1"] Tab 1 content [/%perch_tab]
+	[%perch_tab title="Tab 2"] Tab 2 content [/%perch_tab]
+	[%perch_tab title="Tab 3"] Tab 3 content [/%perch_tab]
+[/%perch_tabs]
+
+<!--
+	IMPORTANT
+	You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+	.perch-tabs.my-custom-tabs { background-color: #84ADEA }
+	.perch-tabs.my-custom-tabs .perch-tabs-nav span { font-size: 1.3em }
+	.perch-tabs.my-custom-tabs .perch-tabs-nav span.perch-tabs-current { background-color: #EDFAFF }
+	.perch-tabs.my-custom-tabs .perch-tabs-pane {
+		padding: 1em;
+		font-size: 1.3em;
+		background-color: #EDFAFF;
+	}
+</style>

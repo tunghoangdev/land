@@ -1,0 +1,158 @@
+/*** Perch Shortcodes - other elements ***/
+
+/*		Tooltip
+---------------------------------------------------------------*/
+
+.qtip.perch-qtip { max-width: 480px !important; }
+.perch-tooltip { display: inline-block; }
+.perch-qtip-size-1 { font-size: 0.8em !important; }
+.perch-qtip-size-2 { font-size: 0.9em !important; }
+.perch-qtip-size-3 { font-size: 1em !important; }
+.perch-qtip-size-4 { font-size: 1.1em !important; }
+.perch-qtip-size-5 { font-size: 1.2em !important; }
+.perch-qtip-size-6 { font-size: 1.3em !important; }
+.perch-tooltip-content { display: none; }
+.perch-tooltip-content > :last-child { margin-bottom: 0; }
+.qtip-content .perch-tooltip-content img,
+.qtip-content .perch-tooltip-content object,
+.qtip-content .perch-tooltip-content iframe,
+.qtip-content .perch-tooltip-content embed { max-width: 430px; }
+.qtip-content .perch-tooltip-content .perch-responsive-media-yes { width: 430px; }
+
+/*		Private
+---------------------------------------------------------------*/
+
+.perch-private { margin: 0 0 1.5em 0 }
+
+/*		Members
+---------------------------------------------------------------*/
+
+.perch-members {
+	margin-bottom: 1.5em;
+	padding: 1em;
+	border-width: 1px 0;
+	border-style: solid;
+	text-align: center;
+}
+.perch-members a {
+	text-decoration: underline;
+	color: inherit;
+}
+
+/*		Guests
+---------------------------------------------------------------*/
+
+.perch-guests { margin-bottom: 1.5em }
+
+/*		Posts
+---------------------------------------------------------------*/
+
+.perch-posts-default-loop { }
+.perch-posts-default-loop .perch-post {
+	margin-bottom: 2.5em;
+	line-height: 1.5;
+}
+.perch-posts-default-loop .perch-post:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.perch-posts-default-loop .perch-post-thumbnail {
+	float: left;
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin-right: 1em;
+}
+.perch-posts-default-loop .perch-post-thumbnail img {
+	max-width: 100px;
+	max-height: 100px;
+}
+.perch-posts-default-loop h2.perch-post-title {
+	clear: none;
+	margin: 0 0 0.3em 0;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.perch-posts-default-loop .perch-post-meta {
+	margin-bottom: 0.7em;
+	font-size: 0.8em;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.perch-posts-default-loop .perch-post-excerpt { margin-bottom: 0.5em }
+.perch-posts-default-loop .perch-post-excerpt p:last-child { margin-bottom: 0 }
+.perch-posts-default-loop .perch-post-comments-link { font-size: 0.9em }
+.perch-posts-teaser-loop { }
+.perch-posts-teaser-loop .perch-post {
+	margin-bottom: 1.5em;
+	line-height: 1.2;
+}
+.perch-posts-teaser-loop .perch-post:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.perch-posts-teaser-loop .perch-post-thumbnail {
+	float: left;
+	display: block;
+	width: 56px;
+	height: 56px;
+	margin: 0 1em 0 0;
+}
+.perch-posts-teaser-loop .perch-post-thumbnail img {
+	display: block;
+	margin: 0;
+	padding: 2px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	max-width: 100%;
+	max-height: 100%;
+}
+.perch-posts-teaser-loop h2.perch-post-title {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 0.9em;
+	font-weight: normal;
+	clear: none;
+}
+.perch-posts-single-post { }
+.perch-posts-single-post .perch-post {
+	margin-bottom: 2.5em;
+	line-height: 1.5;
+}
+.perch-posts-single-post .perch-post:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.perch-posts-single-post h1.perch-post-title {
+	clear: none;
+	margin: 0 0 0.3em 0;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.perch-posts-single-post .perch-post-meta {
+	margin-bottom: 0.7em;
+	font-size: 0.8em;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.perch-posts-single-post .perch-post-content { margin-bottom: 0.5em }
+.perch-posts-single-post .perch-post-content p:last-child { margin-bottom: 0 }
+.blog_item{
+	margin-bottom: 60px;
+	background-color: #fff;
+	border-radius:5px;
+	-webkit-border-radius: 5px;
+}
+.color-overlay .blog_info{ padding: 0 15px 15px; }
+.blog_item .blog_title{ font-size: 18px; line-height: normal; margin: 15px 0; }
+.blog_icons{ margin-right: 10px; }
+.blog_icons i{ margin-right: 5px; }
+.blog_info p{ margin: 15px 0; color: inherit;}
+

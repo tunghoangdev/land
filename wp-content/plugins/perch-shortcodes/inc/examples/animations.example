@@ -1,0 +1,38 @@
+<h2>Different animation types</h2>
+
+[%perch_animate type="bounceIn" delay="1"] [%perch_note] Animated text [/%perch_note] [/%perch_animate]
+[%perch_animate type="flipInX" delay="2"] [%perch_note] Animated text [/%perch_note] [/%perch_animate]
+[%perch_animate type="flipInY" delay="3"] [%perch_note] Animated text [/%perch_note] [/%perch_animate]
+[%perch_animate type="fadeInDown" delay="4"] [%perch_note] Animated text [/%perch_note] [/%perch_animate]
+[%perch_animate type="fadeInLeft" delay="5"] [%perch_note] Animated text [/%perch_note] [/%perch_animate]
+[%perch_animate type="fadeInRight" delay="6"] [%perch_note] Animated text [/%perch_note] [/%perch_animate]
+[%perch_animate type="fadeInUp" delay="7"] [%perch_note] Animated text [/%perch_note] [/%perch_animate]
+
+-----
+
+<h2>Animated columns</h2>
+
+[%perch_row]
+	[%perch_column size="1/2"]
+		[%perch_animate type="fadeInLeft" delay="1" duration="1.5"] [%perch_box] Column content [/%perch_box] [/%perch_animate]
+	[/%perch_column]
+	[%perch_column size="1/2"]
+		[%perch_animate type="fadeInRight" delay="1" duration="1.5"] [%perch_box] Column content [/%perch_box] [/%perch_animate]
+	[/%perch_column]
+[/%perch_row]
+
+-----
+
+<h2>Animated buttons</h2>
+
+[%perch_animate delay="1" inline="yes"] [%perch_button] Click me [/%perch_button] [/%perch_animate] [%perch_animate delay="2" inline="yes"] [%perch_button] Click me [/%perch_button] [/%perch_animate] [%perch_animate delay="3" inline="yes"] [%perch_button] Click me [/%perch_button] [/%perch_animate]
+
+-----
+
+<h2>Animated tabs</h2>
+
+[%perch_tabs]
+	[%perch_tab title="Tab title"] [%perch_animate type="fadeInUp"] Tab content [/%perch_animate] [/%perch_tab]
+	[%perch_tab title="Tab title"] [%perch_animate type="fadeInUp"] Tab content [/%perch_animate] [/%perch_tab]
+	[%perch_tab title="Tab title"] [%perch_animate type="fadeInUp"] Tab content [/%perch_animate] [/%perch_tab]
+[/%perch_tabs]
